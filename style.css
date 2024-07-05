@@ -1,8 +1,5 @@
-<!DOCTYPE html>
-<style>
 body {
   font-family: "Helvetica", sans-serif;
-  background-color: #FFA500;
 }
 
 .sidebar {
@@ -39,20 +36,3 @@ body {
   .sidenav a {font-size: 18px;}
 }
 
-
-</style>
-<html lang="en">
-
-<body>
-
-    <div class="sidebar">
-         <a href="https://kattsar.com">ILLUSTRATIONS</a>
-    <a href="https://kattsar.com/paintings">PAINTINGS</a>
-    <a href="https://kattsar.com/pencils">PENCILS</a>
-    <a href="https://kattsar.com/sculpts">SCULPTS</a>
-    <a href=”https://kattsar.com/about”>SELF</a> 
-    </div>
-    
-</body>
-    
-</html>
