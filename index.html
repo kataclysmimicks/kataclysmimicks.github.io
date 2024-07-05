@@ -6,12 +6,11 @@ body {
 }
 
 .sidebar {
-  width: 130px;
   position: fixed;
   z-index: 1;
   top: 20px;
   left: 10px;
-  background: #eee;
+  background: #FFA500;
   overflow-x: hidden;
   padding: 8px 0;
 }
@@ -20,13 +19,53 @@ body {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
-  color: #2196F3;
+  color: #ffffff;
   display: block;
 }
 
 .sidebar a:hover {
-  color: #064579;
+  color: #000000;
+  background: #FFD700;
 }
+
+/*
+Image grid stuff vvv
+*/
+.gallery{
+    margin-left: 225px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 4px;
+}
+
+/* Create 2 equal columns that sits next to each other */
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/*Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
 
 .main {
   margin-left: 140px; /* Same width as the sidebar + left position in px */
@@ -46,13 +85,29 @@ body {
 <body>
 
     <div class="sidebar">
-         <a href="https://kattsar.com">ILLUSTRATIONS</a>
-    <a href="https://kattsar.com/paintings">PAINTINGS</a>
-    <a href="https://kattsar.com/pencils">PENCILS</a>
-    <a href="https://kattsar.com/sculpts">SCULPTS</a>
-    <a href=”https://kattsar.com/about”>SELF</a> 
+        <a href="https://kattsar.com">ILLUSTRATIONS</a>
+        <a href="https://kattsar.com/paintings">PAINTINGS</a>
+        <a href="https://kattsar.com/pencils">PENCILS</a>
+        <a href="https://kattsar.com/sculpts">SCULPTS</a>
+        <a href="about/">SELF</a> 
     </div>
-    
+
+    <div class = gallery>
+        <div class="row">
+            <div class="column">
+                <img src="images/img1.png">
+                <img src="images/img2.png">
+                <img src="images/img6.jpg">
+                <img src="images/img4.png">
+            </div>
+            <div class="column">
+                <img src="images/img5.png">
+                <img src="images/img6.png">
+                <img src="images/img7.jpg">
+                <img src="images/img8.jpg">
+            </div>
+        </div>
+    </div>
 </body>
     
 </html>
