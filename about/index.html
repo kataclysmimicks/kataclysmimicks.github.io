@@ -6,12 +6,11 @@ body {
 }
 
 .sidebar {
-  width: 130px;
   position: fixed;
   z-index: 1;
   top: 20px;
   left: 10px;
-  background: #eee;
+  background: #FFA500;
   overflow-x: hidden;
   padding: 8px 0;
 }
@@ -20,13 +19,53 @@ body {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
-  color: #2196F3;
+  color: #ffffff;
   display: block;
 }
 
 .sidebar a:hover {
-  color: #064579;
+  color: #000000;
+  background: #FFD700;
 }
+
+/*
+Image grid stuff vvv
+*/
+.gallery{
+    margin-left: 225px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 4px;
+}
+
+/* Create 2 equal columns that sits next to each other */
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/*Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
 
 .main {
   margin-left: 140px; /* Same width as the sidebar + left position in px */
@@ -46,23 +85,56 @@ body {
 <body>
 
     <div class="sidebar">
-         <a href="https://kattsar.com">ILLUSTRATIONS</a>
-    <a href="https://kattsar.com/paintings">PAINTINGS</a>
-    <a href="https://kattsar.com/pencils">PENCILS</a>
-    <a href="https://kattsar.com/sculpts">SCULPTS</a>
-    <a href=”/about”>SELF</a> 
+        <a href="../">ILLUSTRATIONS</a>
+        <a href="../paintings/">PAINTINGS</a>
+        <a href="../pencils/">PENCILS</a>
+        <a href="../sculpts/">SCULPTS</a>
+        <a href="../about/">SELF</a> 
     </div>
 
-    <div>
+    <div class = gallery>
       Hi my name is ankylosaurus. I like to get really mad and eat a lot of leaves. I wanted to show you my drawings today because i am looking for work.
-I graduated Hamilton College in 2023 with a BA in Middle Eastern/Islamicate Worlds Studies. I Will graduate Ringling College of Art + Design in 2027 with a BFA in Illustration. My work explores human intervention in all of its forms.
-my email
-Link to PDF of resume
-social media links somewhere it’s not ugly (NOT ICONS. BOOO) 
-LINKEDIN | INSTAGRAM
-
+      I graduated Hamilton College in 2023 with a BA in Middle Eastern/Islamicate Worlds Studies. I Will graduate Ringling College of Art + Design in 2027 with a BFA in Illustration. My work explores human intervention in all of its forms.
+      
+      
+      P.S. my partner and I built this website from scratch <3
+      my email
+      Link to PDF of resume
+      social media links somewhere it’s not ugly (NOT ICONS. BOOO) 
+      LINKEDIN | INSTAGRAM
+      
+      
+      CAN WE HAVE A GIF OF LAVENDER WALKING BACK AND FORTH ACROSS THE BOTTOM OF THE WEBPAGE pleasse . thanks for visiting. come back soon
+      
+      
+      Resumes are so annoying just like the lady at the career center who said I should put titles of my pieces in my resume. Girl like i have pieces.
+      Exhibitions:
+      2024
+      Making Your Mark
+      Competitions:
+      2024
+      Maker’s Mark Bottle Design Competition
+      Honors
+      2024
+      President’s List (2023-2024)
+      2023
+      Concentration Honors (Middle East/Islamicate Worlds Studies)
+      Thesis of Distinction (Middle East/Islamicate Worlds Studies)
+      Dean’s List (2020-2023)
+      Phi Sigma Iota
+      2022
+      Phi Alpha Theta
+      Casstevens Research Scholar
+      Education
+      2024-2027
+      Bachelor of Fine Arts
+      Illustration
+      Ringling College of Art + Design
+      2020-2023
+      Bachelor of Arts, Cum Laude
+      Middle East/Islamicate Worlds Studies
+      Hamilton College 
     </div>
-    
 </body>
     
 </html>
