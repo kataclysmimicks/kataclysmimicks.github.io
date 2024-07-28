@@ -28,18 +28,24 @@ body {
   background: #FFD700;
 }
 
+footer {
+  font-family: "Helvetica", sans-serif;
+  background: #FF8B00;
+  padding: 0px 4px;
+}
+
 /*
 Image grid stuff vvv
 */
 .gallery{
     margin-left: 225px;
+    margin-right: 13px;
 }
 .row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  padding: 0 4px;
 }
 
 /* Create 2 equal columns that sits next to each other */
@@ -49,11 +55,11 @@ Image grid stuff vvv
   flex-basis: 100%;
   flex: 1;
   max-width: 50%;
-  padding: 0 4px;
+  padding: 0 13px;
 }
 
 .column img {
-  margin-top: 8px;
+  margin-top: 26px;
   vertical-align: middle;
   width: 100%;
 }
@@ -70,7 +76,6 @@ Image grid stuff vvv
 .main {
   margin-left: 140px; /* Same width as the sidebar + left position in px */
   font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
 }
 
 @media screen and (max-height: 450px) {
@@ -111,4 +116,10 @@ Image grid stuff vvv
     </div>
 </body>
     
+<footer>
+  <p>thanks for visiting. come back soon.</p>
+  <p>racing decals © Kateryna Tsaryova 2024</p>
+  <p>under the hood © Andrew Coleman 2024</p>
+</footer>
+
 </html>
