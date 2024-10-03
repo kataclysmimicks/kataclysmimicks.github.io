@@ -5,29 +5,6 @@ body {
   background-color: #FFA500;
 }
 
-.sidebar {
-  position: fixed;
-  z-index: 1;
-  top: 20px;
-  left: 10px;
-  background: #FFA500;
-  overflow-x: hidden;
-  padding: 8px 0;
-}
-
-.sidebar a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #ffffff;
-  display: block;
-}
-
-.sidebar a:hover {
-  color: #000000;
-  background: #FFD700;
-}
-
 /*
 Image grid stuff vvv
 */
@@ -80,17 +57,23 @@ Image grid stuff vvv
 
 
 </style>
+
+<script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+<script> 
+  $(function(){
+    $("#sidebar").load("../sidebar.html");  
+  });
+</script> 
+
 <html lang="en">
 
 <body>
 
-    <div class="sidebar">
-        <a href="../">ILLUSTRATIONS</a>
-        <a href="../paintings/">PAINTINGS</a>
-        <a href="../pencils/">PENCILS</a>
-        <a href="../sculpts/">SCULPTS</a>
-        <a href="../about/">SELF</a> 
-    </div>
+    <div id = "sidebar"></div>
 
     <div class = gallery>
       I graduated Hamilton College in 2023 with a BA in Middle Eastern/Islamicate Worlds Studies. I will graduate Ringling College of Art + Design in 2027 with a BFA in Illustration. My work explores human intervention in all of its forms.

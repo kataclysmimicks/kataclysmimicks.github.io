@@ -5,29 +5,6 @@ body {
   background-color: #FFA500;
 }
 
-.sidebar {
-  position: fixed;
-  z-index: 1;
-  top: 20px;
-  left: 10px;
-  background: #FFA500;
-  overflow-x: hidden;
-  padding: 8px 0;
-}
-
-.sidebar a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #ffffff;
-  display: block;
-}
-
-.sidebar a:hover {
-  color: #000000;
-  background: #FFD700;
-}
-
 footer {
   font-family: "Helvetica", sans-serif;
   background: #FF8B00;
@@ -72,30 +49,28 @@ Image grid stuff vvv
   }
 }
 
-
 .main {
   margin-left: 140px; /* Same width as the sidebar + left position in px */
   font-size: 28px; /* Increased text to enable scrolling */
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-
 </style>
+
+<script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+<script> 
+  $(function(){
+    $("#sidebar").load("sidebar.html");  
+  });
+</script> 
+
 <html lang="en">
 
 <body>
-
-    <div class="sidebar">
-        <a href="./">ILLUSTRATIONS</a>
-        <a href="paintings/">PAINTINGS</a>
-        <a href="pencils/">PENCILS</a>
-        <a href="sculpts/">SCULPTS</a>
-        <a href="about/">SELF</a> 
-    </div>
+    <div id = "sidebar"></div>
 
     <div class = gallery>
         <div class="row">
@@ -121,5 +96,4 @@ Image grid stuff vvv
   <p>racing decals © Kateryna Tsaryova 2024</p>
   <p>under the hood © Andrew Coleman 2024</p>
 </footer>
-
 </html>
