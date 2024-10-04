@@ -5,12 +5,6 @@ body {
   background-color: #FFA500;
 }
 
-footer {
-  font-family: "Helvetica", sans-serif;
-  background: #FF8B00;
-  padding: 0px 4px;
-}
-
 /*
 Image grid stuff vvv
 */
@@ -64,6 +58,7 @@ Image grid stuff vvv
 <script> 
   $(function(){
     $("#sidebar").load("sidebar.html");  
+    $("#footer").load("footer.html");  
   });
 </script> 
 
@@ -91,9 +86,5 @@ Image grid stuff vvv
     </div>
 </body>
     
-<footer>
-  <p>thanks for visiting. come back soon.</p>
-  <p>racing decals © Kateryna Tsaryova 2024</p>
-  <p>under the hood © Andrew Coleman 2024</p>
-</footer>
+<footer id = "footer"></footer>
 </html>

@@ -3,6 +3,9 @@
 body {
   font-family: "Helvetica", sans-serif;
   background-color: #FFA500;
+  display: flex;
+  flex-direction: column;
+  min-height: 97vh;
 }
 
 /*
@@ -48,6 +51,11 @@ Image grid stuff vvv
   margin-left: 140px; /* Same width as the sidebar + left position in px */
   font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 10px;
+  margin-bottom: 10px
+}
+
+main {
+  flex: 1;
 }
 
 @media screen and (max-height: 450px) {
@@ -65,14 +73,15 @@ Image grid stuff vvv
 </script>
 <script> 
   $(function(){
-    $("#sidebar").load("../sidebar.html");  
+    $("#sidebar").load("/sidebar.html");  
+    $("#footer").load("/footer.html"); 
   });
 </script> 
 
 <html lang="en">
 
 <body>
-
+  <main>
     <div id = "sidebar"></div>
 
     <div class = gallery>
@@ -97,8 +106,8 @@ Image grid stuff vvv
       2024
       President’s List (2023-2024)
       2023
-      Concentration Honors (Middle East/Islamicate Worlds Studies)
-      Senior Thesis Award of Distinction (Middle East/Islamicate Worlds Studies)
+      Concentration Honors (Middle East\Islamicate Worlds Studies)
+      Senior Thesis Award of Distinction (Middle East\Islamicate Worlds Studies)
       Dean’s List (2020-2023)
       Phi Sigma Iota
       2022
@@ -111,9 +120,10 @@ Image grid stuff vvv
       Ringling College of Art + Design
       2020-2023
       Bachelor of Arts, Cum Laude
-      Middle East/Islamicate Worlds Studies
+      Middle East\Islamicate Worlds Studies
       Hamilton College 
     </div>
+  </main>
 </body>
-    
+<footer id = "footer"></footer>
 </html>
