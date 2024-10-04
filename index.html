@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<head>
+  <link href="/lightbox2-2.11.4/dist/css/lightbox.css" rel="stylesheet" >
+</head>
+
 <style>
 body {
   font-family: "Helvetica", sans-serif;
@@ -61,6 +65,9 @@ Image grid stuff vvv
     $("#footer").load("footer.html");  
   });
 </script> 
+<script src="/lightbox2-2.11.4/dist/js/lightbox.js"></script>
+
+
 
 <html lang="en">
 
@@ -70,17 +77,17 @@ Image grid stuff vvv
     <div class = gallery>
         <div class="row">
             <div class="column">
-                <img src="images/School Supplies_Glazed.png">
-                <img src="images/G.I.R.L.S._Glazed.png">
-                <img src="images/Peinture 1_Glazed.png">
-                <img src="images/Digital Stumped_Glazed.jpg">
+              <a href="images/School Supplies_Glazed.png" data-lightbox="test" data-title = "School Supplies"><img src="images/School Supplies_Glazed.png"></a>
+              <a href="images/G.I.R.L.S._Glazed.png" data-lightbox="test"><img src="images/G.I.R.L.S._Glazed.png"></a>
+              <img src="images/Peinture 1_Glazed.png">
+              <img src="images/Digital Stumped_Glazed.jpg">
             </div>
             <div class="column">
-                <img src="images/Horovods_Glazed.png">
-                <img src="images/Peinture 2_Glazed.png">
-                <img src="images/detected_Glazed.png">
-                <img src="images/Juggle Gug_Glazed.png">
-                <img src="images/galaxy emoji key emoji_Glazed.png">
+              <img src="images/Horovods_Glazed.png">
+              <img src="images/Peinture 2_Glazed.png">
+              <img src="images/detected_Glazed.png">
+              <img src="images/Juggle Gug_Glazed.png">
+              <img src="images/galaxy emoji key emoji_Glazed.png">
             </div>
         </div>
     </div>
