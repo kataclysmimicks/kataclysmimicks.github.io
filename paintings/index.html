@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<head>
+  <title>PAINTINGS</title>
+  <link rel="icon" type="image/x-icon" href="/images/my-mouse-pointer.png">
+  <link href="/lightbox2-2.11.4/dist/css/lightbox.css" rel="stylesheet" >
+</head>
 <style>
 body {
   font-family: "Helvetica", sans-serif;
@@ -69,6 +74,7 @@ Image grid stuff vvv
     $("#footer").load("/footer.html"); 
   });
 </script> 
+<script src="/lightbox2-2.11.4/dist/js/lightbox.js"></script>
 
 <html lang="en">
 
@@ -78,14 +84,14 @@ Image grid stuff vvv
     <div class = gallery>
         <div class="row">
             <div class="column">
-                <img src="images/lowres/Bagtag_Glazed.jpg">
-                <img src="images/lowres/Anpainted_Glazed.png">
-                <img src="images/lowres/Color Blocks 2_Glazed.jpg">
+              <a href="images/Bagtag_Glazed.jpg" data-lightbox="gallery" data-title = "Bagtag"><img src="images/lowres/Bagtag_Glazed.jpg"></a>
+              <a href="images/Anpainted_Glazed.png" data-lightbox="gallery" data-title = "Anpainted"><img src="images/lowres/Anpainted_Glazed.png"></a>
+              <a href="images/Color Blocks 2_Glazed.jpg" data-lightbox="gallery" data-title = "Color Blocks 2"><img src="images/lowres/Color Blocks 2_Glazed.jpg"></a>
             </div>
             <div class="column">
-                <img src="images/lowres/NatureVert_Glazed.jpg">
-                <img src="images/lowres/Color Blocks 3_Glazed.jpg">
-                <img src="images/lowres/Color Blocks 1_Glazed.jpg">
+              <a href="images/NatureVert_Glazed.jpg" data-lightbox="gallery" data-title = "Nature Vert"><img src="images/lowres/NatureVert_Glazed.jpg"></a>
+              <a href="images/Color Blocks 3_Glazed.jpg" data-lightbox="gallery" data-title = "Color Blocks 3"><img src="images/lowres/Color Blocks 3_Glazed.jpg"></a>
+              <a href="images/Color Blocks 1_Glazed.jpg" data-lightbox="gallery" data-title = "Color Blocks 1"><img src="images/lowres/Color Blocks 1_Glazed.jpg"></a>
                 
             </div>
         </div>

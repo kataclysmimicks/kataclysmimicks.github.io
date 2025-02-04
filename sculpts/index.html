@@ -1,25 +1,35 @@
 <!DOCTYPE html>
+<head>
+  <title>KAT TSAR</title>
+  <link rel="icon" type="image/x-icon" href="/images/my-mouse-pointer.png">
+  <link href="/lightbox2-2.11.4/dist/css/lightbox.css" rel="stylesheet" >
+</head>
+
 <style>
-body {
-  font-family: "Helvetica", sans-serif;
-  background-color: #FFA500;
-  display: flex;
-  flex-direction: column;
-  min-height: 97vh;
+
+* {
+  cursor: url('/images/my-mouse-pointer.png'), auto;
 }
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;;
+  background-color: #FFA500;
+}
+
 
 /*
 Image grid stuff vvv
 */
 .gallery{
-    margin-left: 225px;
+  margin-left: 225px;
+  margin-right: 13px;
 }
+
 .row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  padding: 0 4px;
 }
 
 /* Create 2 equal columns that sits next to each other */
@@ -29,39 +39,33 @@ Image grid stuff vvv
   flex-basis: 100%;
   flex: 1;
   max-width: 50%;
-  padding: 0 4px;
+  padding: 0 13px;
 }
 
 .column img {
-  margin-top: 8px;
+  margin-top: 26px;
   vertical-align: middle;
   width: 100%;
 }
 
 /*Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
+  .gallery {
+    grid-template-rows: repeat(2, 1fr)
+  }
+  
   .column {
     flex: 100%;
     max-width: 100%;
+    
+
   }
 }
-
 
 .main {
   margin-left: 140px; /* Same width as the sidebar + left position in px */
   font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
 }
-
-main {
-  flex: 1;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
 
 </style>
 
@@ -72,28 +76,67 @@ main {
 </script>
 <script> 
   $(function(){
-    $("#sidebar").load("/sidebar.html");
-    $("#footer").load("/footer.html");   
+    $("#sidebar").load("/sidebar.html");  
+    $("#footer").load("/footer.html");  
   });
 </script> 
+<script src="/lightbox2-2.11.4/dist/js/lightbox.js"></script>
 
 <html lang="en">
 
 <body>
-  <main>
     <div id = "sidebar"></div>
-
+    
     <div class = gallery>
         <div class="row">
             <div class="column">
-                oops... nothing here!
+              <a href="images/Front.jpeg" data-lightbox="stone_gallery" data-title = "Stone Front"><img src="images/lowres/Front.jpeg"></a>
+              <a href="images/Back.jpeg" data-lightbox="stone_gallery" data-title = "Stone Back"></a>
+              <a href="images/Right.jpeg" data-lightbox="stone_gallery" data-title = "Stone Right"></a>
+              <a href="images/Left.jpeg" data-lightbox="stone_gallery" data-title = "Stone Left"></a>
+              <a href="images/Detail1.jpeg" data-lightbox="stone_gallery" data-title = "Stone Detail 1"></a>
+              <a href="images/Detail1_alt.jpeg" data-lightbox="stone_gallery" data-title = "Stone Detail 1 Alt"></a>
+              <a href="images/Detail1_alt_alt.jpeg" data-lightbox="stone_gallery" data-title = "Stone Detail 1 Alt Alt"></a>
+              <a href="images/Detail2_alt.jpeg" data-lightbox="stone_gallery" data-title = "Stone Detail 2 Alt"></a>
+              <a href="images/3_4_1.jpeg" data-lightbox="stone_gallery" data-title = "Stone 3 4 1"></a>
+
+              <a href="images/IMG_4614.jpeg" data-lightbox="steward_gallery" data-title = "The Steward & Gramps"><img src ="images/lowres/IMG_4614.jpeg"></a>
+              <a href="images/IMG_4600.jpeg" data-lightbox="steward_gallery" data-title = "The Steward & Gramps"></a>
+              <a href="images/IMG_4605.jpeg" data-lightbox="steward_gallery" data-title = "The Steward & Gramps"></a>
+              <a href="images/IMG_4609.jpeg" data-lightbox="steward_gallery" data-title = "The Steward & Gramps"></a>
+              <a href="images/IMG_4613.jpeg" data-lightbox="steward_gallery" data-title = "The Steward & Gramps"></a>
+              <a href="images/IMG_4618.jpeg" data-lightbox="steward_gallery" data-title = "The Steward & Gramps"></a>
+              <a href="images/IMG_4622.jpeg" data-lightbox="steward_gallery" data-title = "The Steward & Gramps"></a>
+              <a href="images/IMG_4623.jpeg" data-lightbox="steward_gallery" data-title = "The Steward & Gramps"></a>
+              <a href="images/IMG_4625.jpeg" data-lightbox="steward_gallery" data-title = "The Steward & Gramps"></a>
+              <a href="images/IMG_4627.jpeg" data-lightbox="steward_gallery" data-title = "The Steward & Gramps"></a>
+              <a href="images/IMG_4630.jpeg" data-lightbox="steward_gallery" data-title = "The Steward & Gramps"></a>
+
+
+
             </div>
             <div class="column">
-                
+              <a href="images/IMG_4177.jpeg" data-lightbox="eye_gallery" data-title = "The Eye"><img src="images/lowres/IMG_4177.jpeg"></a>
+              <a href="images/IMG_4182.jpeg" data-lightbox="eye_gallery" data-title = "The Eye"></a>
+              <a href="images/IMG_4186.jpeg" data-lightbox="eye_gallery" data-title = "The Eye"></a>
+              <a href="images/IMG_4187.jpeg" data-lightbox="eye_gallery" data-title = "The Eye"></a>
+              <a href="images/IMG_4188.jpeg" data-lightbox="eye_gallery" data-title = "The Eye"></a>
+              <a href="images/IMG_4190.jpeg" data-lightbox="eye_gallery" data-title = "The Eye"></a>
+              <a href="images/IMG_4192.jpeg" data-lightbox="eye_gallery" data-title = "The Eye"></a>
+              <a href="images/IMG_4194.jpeg" data-lightbox="eye_gallery" data-title = "The Eye"></a>
+              <a href="images/IMG_4196.jpeg" data-lightbox="eye_gallery" data-title = "The Eye"></a>
+              <a href="images/IMG_4197.jpeg" data-lightbox="eye_gallery" data-title = "The Eye"></a>
+              <a href="images/IMG_4198.jpeg" data-lightbox="eye_gallery" data-title = "The Eye"></a>
+              <a href="images/IMG_4199.jpeg" data-lightbox="eye_gallery" data-title = "The Eye"></a>
+              <a href="images/IMG_4201.jpeg" data-lightbox="eye_gallery" data-title = "The Eye"></a>
+              <a href="images/IMG_4203.jpeg" data-lightbox="eye_gallery" data-title = "The Eye"></a>
+              <a href="images/IMG_4206.jpeg" data-lightbox="eye_gallery" data-title = "The Eye"></a>
+              <a href="images/IMG_4214.jpeg" data-lightbox="eye_gallery" data-title = "The Eye"></a>
+              <a href="images/IMG_4218.jpeg" data-lightbox="eye_gallery" data-title = "The Eye"></a>
             </div>
         </div>
     </div>
-  </main>
 </body>
+    
 <footer id = "footer"></footer>
 </html>
