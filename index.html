@@ -14,58 +14,51 @@
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;;
   background-color: #FFA500;
+    margin-left: 246px;
+    margin-right: 246px;
+
 }
 
 
 /*
 Image grid stuff vvv
 */
-.gallery{
-  margin-left: 225px;
-  margin-right: 13px;
+/* .gallery{ */
+  /* margin-left: 225px;
+} */
+
+/* .row {
+  display: flex;
+}
+
+.gallery a{
+   flex-basis:  auto;
+} */
+
+.gallery {
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .row {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 10px; /* optional spacing between images */
+}
+
+.gallery a {
+  flex: 1 1 auto;
+}
+
+.gallery img {
   width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
 }
 
-/* Create 2 equal columns that sits next to each other */
-.column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-  max-width: 50%;
-  padding: 0 13px;
-}
-
-.column img {
-  margin-top: 26px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-/*Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .gallery {
-    grid-template-rows: repeat(2, 1fr)
-  }
-  
-  .column {
-    flex: 100%;
-    max-width: 100%;
-    
-
-  }
-}
-
-.main {
-  margin-left: 140px; /* Same width as the sidebar + left position in px */
-  font-size: 28px; /* Increased text to enable scrolling */
-}
 
 </style>
 
@@ -86,25 +79,23 @@ Image grid stuff vvv
 
 <body>
     <div id = "sidebar"></div>
-    
     <div class = gallery>
-        <div class="row">
-            <div class="column">
-              <a href="images/School Supplies_Glazed.png" data-lightbox="gallery" data-title = "School Supplies"><img src="images/lowres/School Supplies_Glazed.png"></a>
-              <a href="images/March 5th 2021.jpg"data-lightbox="gallery" data-title = "March 5th 2021"><img src="images/lowres/March 5th 2021.jpg"></a>
-              <a href="images/G.I.R.L.S._Glazed.png" data-lightbox="gallery" data-title = "G.I.R.L.S."><img src="images/lowres/G.I.R.L.S._Glazed.png"></a>
-              <a href="images/Digital Stumped_Glazed.jpg" data-lightbox="gallery" data-title="Digital Stumped"><img src="images/lowres/Digital Stumped_Glazed.jpg"></a>
+          <div class="row">
+            <a href="images/March 5th 2021.jpg" data-lightbox="gallery" data-title = "March 5th 2021"><img src="images/lowres/March 5th 2021.jpg"></a>
+            <a href="images/Taxi Driver.jpg" data-lightbox="gallery" data-title = "Taxi Driver"><img src="images/lowres/Taxi Driver.jpg"></a>
             </div>
-            <div class="column">
-              <a href="images/Horovods_Glazed.png" data-lightbox="gallery" data-title="Horovods"><img src="images/lowres/Horovods_Glazed.png"></a>
-              <a href="images/Check Your Kid's Candy.png"data-lightbox="gallery" data-title = "Check Your Kid's Candy"><img src="images/lowres/Check Your Kid's Candy.png"></a>
-              <a href="images/Peinture 2_Glazed.png" data-lightbox="gallery" data-title="Peinture 2"><img src="images/lowres/Peinture 2_Glazed.png"></a>
-              <a href="images/detected_Glazed.png" data-lightbox="gallery" data-title="Detected"><img src="images/lowres/detected_Glazed.png"></a>
-              <a href="images/Juggle Gug_Glazed.png" data-lightbox="gallery" data-title="Juggle Gug"><img src="images/lowres/Juggle Gug_Glazed.png"></a>
-            </div>
-        </div>
+          <div class="row">
+              <a href="images/Pump Jockey.png" data-lightbox="gallery" data-title="Pump Jockey"><img src="images/lowres/Pump Jockey.png"></a>
+              <a href="images/Check Your Kid_s Candy.png" data-lightbox="gallery" data-title="Check Your Kid's Candy"><img src="images/lowres/Check Your Kid_s Candy.png"></a>
+          </div>
+          <div class="row">
+            <a href="images/School Supplies.png" data-lightbox="gallery" data-title="School Supplies"><img src="images/lowres/School Supplies.png"></a>
+            <a href="images/Horovod1.jpg" data-lightbox="gallery" data-title="Horovods"><img src="images/lowres/Horovod1.jpg"></a>
+            <a href="images/Horovod2.jpg" data-lightbox="gallery" data-title="Horovods"><img src="images/lowres/Horovod2.jpg"></a>
+          </div>
     </div>
 </body>
+
     
 <footer id = "footer"></footer>
 </html>
